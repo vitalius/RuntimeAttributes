@@ -15,7 +15,7 @@ namespace CustomAttribute
         public string Text { get; set; }
 
         /*
-         * Returns value of the 'Special' attribute of the local Text variable
+         * Returns Index value of the 'Special' attribute 
          */
         public int getAttribute() {
             var textVar = TypeDescriptor.GetProperties(this.GetType())["Text"];
@@ -24,9 +24,9 @@ namespace CustomAttribute
         }
 
         /*
-         * Changes value of the 'Special' attribute of the local Text variable
+         * Changes Index value of the 'Special' attribute 
          */
-        public void setSpecialAttribute(int index)
+        public void setAttribute(int index)
         {
             var textVar = TypeDescriptor.GetProperties(this.GetType())["Text"];
             var attr = (SpecialAttribute)textVar.Attributes[typeof(SpecialAttribute)];

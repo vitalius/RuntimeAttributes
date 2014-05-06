@@ -13,7 +13,7 @@ namespace CustomAttribute
             var p = new SampleClass();
             Console.WriteLine("p Attr: " + p.getAttribute());
             /* change attribute value */
-            p.setSpecialAttribute(10);
+            p.setAttribute(10);
             Console.WriteLine("p Attr: " + p.getAttribute());
 
             /* instantiate a new object, attribute value remains changed */
